@@ -1,6 +1,6 @@
 <template>
   <v-row class="d-flex justify-center">
-    <v-col cols="12" lg="6" xl="4">
+    <v-col cols="12" md="10">
       <v-card class="card" hover :to="{ name: codename.toLowerCase() }">
         <div class="d-flex">
           <v-parallax
