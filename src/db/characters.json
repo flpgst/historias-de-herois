@@ -1,0 +1,54 @@
+[
+  {
+    "brand": "dc",
+    "codename": "Batman",
+    "subtitle": "Homem Morcego",
+    "description": "Batman é um super-herói que combate o crime sem superpoderes: suas principais armas são a inteligência, as artes marciais e a tecnologia. Seu nome verdadeiro é Bruce Wayne, um bilionário que criou sua identidade secreta para lutar por justiça, enfrentando os maiores vilões da famosa Gotham City. ",
+    "archetype": "hero",
+    "tags": [
+      {
+        "label": "Gotham",
+        "tooltip": "Localização"
+      },
+      {
+        "label": "Liga da Justiça",
+        "tooltip": "Equipe"
+      }
+    ],
+    "story": "<p>Ainda criança, Bruce Wayne viu os pais serem assassinados por um criminoso de Gotham City. Assim, ele decidiu por ordem na cidade com as próprias mãos.</p><p>Logo que se tornou adulto, passou a treinar artes marciais e criminologia ao redor do mundo. Com a ajuda dos melhores mestres, voltou para a casa sem saber como colocar os aprendizados em prática.</p><p> Após seu retorno, testemunhou a entrada de um morcego pela janela de sua casa. Foi o bastante para que ele se inspirasse no animal para criar uma identidade secreta. Dessa maneira, Bruce Wayne assumiu a identidade de Batman.</p><p> Apesar de super-herói, Batman não tem superpoderes. Na verdade, ele utiliza de tecnologia e aliados fiéis para realizar suas missões. O herói conta com equipamentos tecnológicos complexos e veículos fora do comum. Isso, sem falar, é claro, no seu intelecto privilegiado.</p><p> Entre seus aliados, estão heróis poderosos, assim como Superman e Mulher Maravilha. Além disso, conta com o fiel mordomo Alfred e com o comissário de polícia Gordon. Ao longo da carreira, também teve parceiros importantes, como Robin, Batgirl e Mulher-Gato.</p><p> Por outro lado, o hall de inimigos também é vasto. Entre eles estão um palhaço psicopata (Coringa), um ex-promotor público (Duas Caras), um guerreiro imortal (Ra’s al Ghul), um gângster político (Pinguim) e uma mulher capaz de controlar plantas (Hera Venenosa), dentre vários outros.</p>"
+  },
+  {
+    "brand": "dc",
+    "codename": "Robin",
+    "subtitle": "O Menino Prodígio",
+    "description": "Robin é parceiro oficial do Batman, que o acompanha no combate às injustiças. A primeira aparição de Robin nos quadrinhos foi em 1940, como um jovem acrobata de circo. Desde então já existiram 7 Robins diferentes, mas esse personagem é sempre alguém com quem Batman pode discutir os seus planos.",
+    "archetype": "hero",
+    "tags": [
+      {
+        "label": "Gotham",
+        "tooltip": "Localização"
+      },
+      {
+        "label": "Jovens Titãs",
+        "tooltip": "Equipe"
+      }
+    ]
+  },
+  {
+    "brand": "dc",
+    "codename": "Coringa",
+    "subtitle": "Joker",
+    "description": "O Coringa é o principal vilão e rival do Batman. Ele é sádico, excêntrico e cruel, mas também tem um lado cômico que o faz um vilão muito popular com os fãs. Uma marca registrada do Coringa, além de seu sorriso, é a lapela de seu terno, com flores de onde sai um ácido para atingir seus inimigos.",
+    "archetype": "villain",
+    "tags": [
+      {
+        "label": "Gotham",
+        "tooltip": "Localização"
+      },
+      {
+        "label": "Legião do Mal",
+        "tooltip": "Equipe"
+      }
+    ]
+  }
+]
