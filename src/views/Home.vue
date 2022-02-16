@@ -1,9 +1,8 @@
 <template>
   <v-row>
+    <v-col cols="12"> </v-col>
     <v-col cols="12">
       <top></top>
-    </v-col>
-    <v-col cols="12">
       <character-list></character-list>
     </v-col>
   </v-row>

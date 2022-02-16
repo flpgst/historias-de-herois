@@ -1,11 +1,25 @@
 <template>
   <v-row>
-    <v-col> LOGO </v-col>
+    <v-col cols="3" class="pa-0">
+      <v-img :src="Logo" height="150" contain></v-img>
+    </v-col>
+    <v-col cols="6" class="d-flex align-center text-justify">
+      <span class="text-h5">
+        Aqui contamos as histórias dos super-heróis com uma linguagem limpa e acessível para
+        crianças em idade pré-escolar.
+      </span>
+    </v-col>
   </v-row>
 </template>
 
 <script>
-export default {};
+import Logo from "@/assets/images/logo.svg";
+
+export default {
+  data: () => ({
+    Logo,
+  }),
+};
 </script>
 
 <style></style>
