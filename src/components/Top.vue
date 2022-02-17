@@ -1,7 +1,7 @@
 <template>
   <v-row>
-    <v-col cols="3" class="pa-0">
-      <v-img :src="Logo" height="150" contain></v-img>
+    <v-col cols="3" class="d-flex justify-center">
+      <logo></logo>
     </v-col>
     <v-col cols="6" class="d-flex align-center text-justify">
       <span class="text-h5">
@@ -13,9 +13,10 @@
 </template>
 
 <script>
-import Logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/logo.vue";
 
 export default {
+  components: { Logo },
   data: () => ({
     Logo,
   }),
