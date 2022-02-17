@@ -1,15 +1,11 @@
 <template>
   <v-row class="d-flex justify-center">
     <v-col cols="12" md="10">
-      <v-card class="card" hover :to="{ name: codename.toLowerCase() }">
+      <v-card ref="characterCard" class="card" hover :to="{ name: codename.toLowerCase() }">
         <div class="d-flex">
-          <v-parallax
-            class="flex-grow-1 rounded mb-1"
-            height="350"
-            :src="require('@/assets/' + imgSrc)"
-          >
-          </v-parallax>
-          <div v-if="$vuetify.breakpoint.mdAndUp" class="d-flex mb-1">
+          <v-img class="rounded mb-1" height="350" width="200" :src="require('@/assets/' + imgSrc)">
+          </v-img>
+          <div v-if="$vuetify.breakpoint.lgAndUp" class="d-flex mb-1">
             <character-tags
               :archetype="archetype"
               :brand="brand"
@@ -28,7 +24,7 @@
         <v-card-text>
           {{ description }}
         </v-card-text>
-        <v-card-actions v-if="$vuetify.breakpoint.smAndDown" :class="`${archetype}`">
+        <v-card-actions v-if="$vuetify.breakpoint.mdAndDown" :class="`${archetype} rounded py-0`">
           <character-tags
             :archetype="archetype"
             :brand="brand"
@@ -43,6 +39,7 @@
 
 <script>
 import CharacterTags from "@/components/CharacterTags.vue";
+import normalizarNome from "@/helpers/normalizarNome";
 
 export default {
   name: "Character",
@@ -66,7 +63,7 @@ export default {
     },
     subtitle: {
       type: String,
-      required: true,
+      default: "",
     },
     description: {
       type: String,
@@ -94,23 +91,14 @@ export default {
         "/" +
         this.archetypePluralized +
         "/" +
-        this.codename.toLowerCase() +
+        normalizarNome(this.codename) +
         "/card-image.jpg"
       );
     },
-  },
-  // data: () => ({
-  //   imgPath: "",
-  // }),
-  mounted() {
-    // this.getImgPath();
-  },
-  methods: {
-    getImgPath() {
-      // const archetypeFolder = this.archetype === "hero" ? "heroes" : "villains";
-      // const path = "@/assets/" + this.brand + "/" + archetypeFolder + "/" + this.image;
+    getImageSize() {
+      const cardWidth = this.$refs.characterCard.$el.getBoundingClientRect().width;
 
-      this.imgPath = "@/assets/dc/heroes/batman/card-image.jpg";
+      return cardWidth * 0.8;
     },
   },
 };

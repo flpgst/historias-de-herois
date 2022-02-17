@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="d-flex flex-wrap">
     <v-tooltip
-      :right="$vuetify.breakpoint.mdAndUp"
-      :top="$vuetify.breakpoint.smAndDown"
+      :right="$vuetify.breakpoint.lgAndUp"
+      :top="$vuetify.breakpoint.mdAndDown"
       :color="archetype === 'hero' ? 'hero-tag' : 'villain-tag'"
     >
       <template v-slot:activator="{ on, attrs }">
         <img
-          v-if="$vuetify.breakpoint.mdAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
           v-bind="attrs"
           v-on="on"
           :src="require(`@/assets/${brand === 'dc' ? 'dc' : 'marvel'}/logo.svg`)"
@@ -21,7 +21,7 @@
           label
           dark
           :color="brand === 'dc' ? 'dc' : 'marvel'"
-          :class="`${$vuetify.breakpoint.smAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
+          :class="`ma-1 justify-center`"
         >
           <img
             v-bind="attrs"
@@ -36,8 +36,8 @@
       {{ brand === "dc" ? "DC Comics" : "Marvel Comics" }}
     </v-tooltip>
     <v-tooltip
-      :right="$vuetify.breakpoint.mdAndUp"
-      :top="$vuetify.breakpoint.smAndDown"
+      :right="$vuetify.breakpoint.lgAndUp"
+      :top="$vuetify.breakpoint.mdAndDown"
       :color="archetype === 'hero' ? 'hero-tag' : 'villain-tag'"
     >
       <template v-slot:activator="{ on, attrs }">
@@ -47,7 +47,7 @@
           label
           dark
           :color="archetype === 'hero' ? 'orange darken-4' : 'purple darken-4'"
-          :class="`${$vuetify.breakpoint.smAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
+          :class="`${$vuetify.breakpoint.mdAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
         >
           <span>{{ archetypeTranslated }}</span>
         </v-chip>
@@ -58,8 +58,8 @@
     <v-tooltip
       v-for="({ label, tooltip }, index) in tags"
       :key="index"
-      :right="$vuetify.breakpoint.mdAndUp"
-      :top="$vuetify.breakpoint.smAndDown"
+      :right="$vuetify.breakpoint.lgAndUp"
+      :top="$vuetify.breakpoint.mdAndDown"
       :color="archetype === 'hero' ? 'hero-tag' : 'villain-tag'"
     >
       <template v-slot:activator="{ on, attrs }">
@@ -69,7 +69,7 @@
           label
           dark
           :color="archetype === 'hero' ? 'orange darken-4' : 'purple darken-4'"
-          :class="`${$vuetify.breakpoint.smAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
+          :class="`${$vuetify.breakpoint.mdAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
         >
           <span>{{ label }}</span>
         </v-chip>
