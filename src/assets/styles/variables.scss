@@ -1,0 +1,22 @@
+@import "~vuetify/src/styles/main.sass";
+
+:root {
+  --dc-color: #0376f2;
+  --marvel-color: #ff0000;
+}
+.hero-gradient {
+  background: #e65100;
+  background: linear-gradient(45deg, #ffa726 0%, #e47208 100%);
+}
+.villain-gradient {
+  background: #8829ff;
+  background: linear-gradient(45deg, #8829ff 0%, #6200e6 100%);
+}
+.text-shadow {
+  &-hero {
+    text-shadow: 1px 1px map-get($deep-orange, "darken-4");
+  }
+  &-villain {
+    text-shadow: 1px 1px map-get($deep-purple, "darken-4");
+  }
+}

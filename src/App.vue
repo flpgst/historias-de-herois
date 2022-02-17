@@ -22,6 +22,6 @@ export default {
   },
 };
 </script>
-<style>
-@import "./assets/styles/variables.css";
+<style lang="scss">
+@import "./assets/styles/variables.scss";
 </style>

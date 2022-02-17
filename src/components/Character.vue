@@ -108,25 +108,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~vuetify/src/styles/main.sass";
-
 .card {
   border: 5px solid transparent;
-}
-.text-shadow {
-  &-hero {
-    text-shadow: 1px 1px map-get($deep-orange, "darken-4");
-  }
-  &-villain {
-    text-shadow: 1px 1px map-get($deep-purple, "darken-4");
-  }
-}
-.hero-gradient {
-  background: #e65100;
-  background: linear-gradient(45deg, #e65100 0%, #ffa726 100%);
-}
-.villain-gradient {
-  background: #8829ff;
-  background: linear-gradient(45deg, #8829ff 0%, #6200e6 100%);
 }
 </style>
