@@ -47,7 +47,7 @@
           label
           dark
           :color="archetype === 'hero' ? 'orange darken-4' : 'purple darken-4'"
-          :class="`${$vuetify.breakpoint.mdAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
+          class="ma-1 justify-center"
         >
           <span>{{ archetypeTranslated }}</span>
         </v-chip>
@@ -69,7 +69,7 @@
           label
           dark
           :color="archetype === 'hero' ? 'orange darken-4' : 'purple darken-4'"
-          :class="`${$vuetify.breakpoint.mdAndDown ? 'px-4' : 'px-0'} ma-1 justify-center`"
+          class="ma-1 justify-center"
         >
           <span>{{ label }}</span>
         </v-chip>
