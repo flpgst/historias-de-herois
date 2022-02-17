@@ -11,7 +11,7 @@
           <v-card-subtitle>{{ character.subtitle }}</v-card-subtitle>
         </div>
         <v-card-text class="text-justify" v-html="character.story"></v-card-text>
-        <v-card-actions :class="`${character.archetype} rounded py-0`">
+        <v-card-actions :class="`${character.archetype} py-0`">
           <character-tags
             :archetype="character.archetype"
             :brand="character.brand"
@@ -52,7 +52,9 @@ export default {
   },
   data() {
     return {
-      character: charactersDb.find((char) => char.codename === this.$route.params.codename),
+      character: charactersDb.find(
+        (char) => char.codename.toLowerCase() === this.$route.name.toLowerCase()
+      ),
     };
   },
 };
