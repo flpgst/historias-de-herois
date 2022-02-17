@@ -1,7 +1,7 @@
 <template>
   <v-row class="d-flex justify-center">
     <v-col cols="12" md="10">
-      <v-card ref="characterCard" class="card" hover :to="{ name: codename.toLowerCase() }">
+      <v-card ref="characterCard" class="card" hover :to="{ name: normalizarNome(codename) }">
         <div class="d-flex">
           <v-img class="rounded mb-1" height="350" width="200" :src="require('@/assets/' + imgSrc)">
           </v-img>
@@ -21,7 +21,7 @@
           </v-card-subtitle>
         </div>
 
-        <v-card-text>
+        <v-card-text class="text-justify">
           {{ description }}
         </v-card-text>
         <v-card-actions v-if="$vuetify.breakpoint.mdAndDown" :class="`${archetype} rounded py-0`">
@@ -95,11 +95,9 @@ export default {
         "/card-image.jpg"
       );
     },
-    getImageSize() {
-      const cardWidth = this.$refs.characterCard.$el.getBoundingClientRect().width;
-
-      return cardWidth * 0.8;
-    },
+  },
+  methods: {
+    normalizarNome,
   },
 };
 </script>
