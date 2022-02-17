@@ -1,7 +1,12 @@
 <template>
   <v-row class="d-flex justify-center">
     <v-col cols="12" md="10">
-      <v-card ref="characterCard" class="card" hover :to="{ name: normalizarNome(codename) }">
+      <v-card
+        ref="characterCard"
+        class="card"
+        hover
+        :to="{ name: normalizarNome(codename), params: { codename } }"
+      >
         <div class="d-flex">
           <v-img class="rounded mb-1" height="350" width="200" :src="require('@/assets/' + imgSrc)">
           </v-img>
@@ -55,7 +60,7 @@ export default {
     brand: {
       type: String,
       required: true,
-      validator: (value) => ["dc", "marvel"].indexOf(value) !== -1,
+      validator: (value) => ["dc", "marvel", ""].indexOf(value) !== -1,
     },
     codename: {
       type: String,

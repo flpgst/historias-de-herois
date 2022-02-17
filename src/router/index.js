@@ -4,30 +4,43 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
+const CharacterRoutes = [
+  {
+    path: "/batman",
+    name: "batman",
+    component: () => import(/* webpackChunkName: "batman" */ "../components/CharacterStory.vue"),
+  },
+  {
+    path: "/robin",
+    name: "robin",
+    component: () => import(/* webpackChunkName: "robin" */ "../components/CharacterStory.vue"),
+  },
+  {
+    path: "/coringa",
+    name: "coringa",
+    component: () => import(/* webpackChunkName: "coringa" */ "../components/CharacterStory.vue"),
+  },
+  {
+    path: "/capitao-america",
+    name: "capitao-america",
+    component: () =>
+      import(/* webpackChunkName: "capitao-america" */ "../components/CharacterStory.vue"),
+  },
+  {
+    path: "/viuva-negra",
+    name: "viuva-negra",
+    component: () =>
+      import(/* webpackChunkName: "viuva-negra" */ "../components/CharacterStory.vue"),
+  },
+];
+
 const routes = [
   {
     path: "/",
     name: "Home",
     component: Home,
   },
-  {
-    path: "/batman",
-    name: "batman",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "batman" */ "../views/dc/heroes/Batman.vue"),
-  },
-  {
-    path: "/coringa",
-    name: "coringa",
-    // component: () => import(/* webpackChunkName: "coringa" */ "../views/dc/heroes/Coringa.vue"),
-  },
-  {
-    path: "/robin",
-    name: "robin",
-    // component: () => import(/* webpackChunkName: "robin" */ "../views/dc/heroes/Robin.vue"),
-  },
+  ...CharacterRoutes,
 ];
 
 const router = new VueRouter({
