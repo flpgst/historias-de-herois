@@ -2,6 +2,7 @@
   <v-row class="d-flex justify-center">
     <v-col cols="12" md="10">
       <v-card
+        :disabled="!story"
         ref="characterCard"
         class="card"
         hover
@@ -19,15 +20,26 @@
             ></character-tags>
           </div>
         </div>
-        <div :class="`${archetype} rounded text-shadow-${archetype} white--text`">
-          <v-card-title class="pa-1">{{ codename }}</v-card-title>
-          <v-card-subtitle class="pa-1 d-flex d-inline-block justify-space-between">
-            <div>{{ subtitle }}</div>
-          </v-card-subtitle>
+        <div :class="`d-flex align-center justify-space-between ${archetype} rounded `">
+          <div :class="`text-shadow-${archetype} white--text`">
+            <v-card-title class="pa-1">{{ codename }}</v-card-title>
+            <v-card-subtitle class="pa-1 d-flex d-inline-block justify-space-between">
+              <div>{{ subtitle }}</div>
+            </v-card-subtitle>
+          </div>
+
+          <v-chip v-if="!story" disabled class="mx-1">
+            <v-icon>mdi-mod-bad</v-icon>
+            Sem história cadastrada
+          </v-chip>
         </div>
 
-        <v-card-text class="text-justify">
-          {{ description }}
+        <v-card-text>
+          <v-row>
+            <v-col cols="12" class="text-justify">
+              <span>{{ description }}</span>
+            </v-col>
+          </v-row>
         </v-card-text>
         <v-card-actions v-if="$vuetify.breakpoint.mdAndDown" :class="`${archetype} rounded py-0`">
           <character-tags
@@ -84,6 +96,10 @@ export default {
     tags: {
       type: Array,
       default: () => [],
+    },
+    story: {
+      type: Boolean,
+      required: false,
     },
   },
   computed: {

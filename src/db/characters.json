@@ -50,8 +50,7 @@
         "label": "Legião do Mal",
         "tooltip": "Equipe"
       }
-    ],
-    "story": "A história dste personagem ainda não foi escrita no Histórias de Heróis"
+    ]
   },
   {
     "brand": "marvel",
@@ -86,7 +85,6 @@
         "label": "Vingadores",
         "tooltip": "Equipe"
       }
-    ],
-    "story": "A história dste personagem ainda não foi escrita no Histórias de Heróis"
+    ]
   }
 ]

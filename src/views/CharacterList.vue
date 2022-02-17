@@ -4,7 +4,9 @@
       cols="12"
       md="6"
       lg="4"
-      v-for="({ archetype, brand, codename, description, subtitle, tags }, index) in characters"
+      v-for="(
+        { archetype, brand, codename, description, subtitle, tags, story }, index
+      ) in characters"
       :key="index"
     >
       <character
@@ -14,6 +16,7 @@
         :description="description"
         :subtitle="subtitle"
         :tags="tags"
+        :story="story"
       ></character>
     </v-col>
   </v-row>
