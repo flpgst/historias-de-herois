@@ -15,13 +15,13 @@
         "tooltip": "Equipe"
       }
     ],
-    "story": "<p>Ainda criança, Bruce Wayne viu os pais serem assassinados por um criminoso de Gotham City. Assim, ele decidiu por ordem na cidade com as próprias mãos.</p><p>Logo que se tornou adulto, passou a treinar artes marciais e criminologia ao redor do mundo. Com a ajuda dos melhores mestres, voltou para a casa sem saber como colocar os aprendizados em prática.</p><p> Após seu retorno, testemunhou a entrada de um morcego pela janela de sua casa. Foi o bastante para que ele se inspirasse no animal para criar uma identidade secreta. Dessa maneira, Bruce Wayne assumiu a identidade de Batman.</p><p> Apesar de super-herói, Batman não tem superpoderes. Na verdade, ele utiliza de tecnologia e aliados fiéis para realizar suas missões. O herói conta com equipamentos tecnológicos complexos e veículos fora do comum. Isso, sem falar, é claro, no seu intelecto privilegiado.</p><p> Entre seus aliados, estão heróis poderosos, assim como Superman e Mulher Maravilha. Além disso, conta com o fiel mordomo Alfred e com o comissário de polícia Gordon. Ao longo da carreira, também teve parceiros importantes, como Robin, Batgirl e Mulher-Gato.</p><p> Por outro lado, o hall de inimigos também é vasto. Entre eles estão um palhaço psicopata (Coringa), um ex-promotor público (Duas Caras), um guerreiro imortal (Ra’s al Ghul), um gângster político (Pinguim) e uma mulher capaz de controlar plantas (Hera Venenosa), dentre vários outros.</p>"
+    "story": "<p>O menino Bruce Wayne certo dia estava passeando com seus pais Thomas e Martha Wayne, mas durante o pessoal um criminoso vez uma malvadeza muito grande com os pais dele e ele teve que voltar pra casa sozinho.</p>Quando ele chegou em casa ele falou o que aconteceu para Alfred, que era o mordomo da mansão dos Wayne o Alfred acalmou ele e dali em diante foi Alfred que passou a cuidar do menino Bruce.<p>Enquanto Bruce crescia ele treinava muitos tipos diferentes de luta e viajou por vários lugares do mundo para aprender novas técnicas. Ele teve ajuda dos melhores mestres do mundo mas voltou para a casa sem saber como colocar os aprendizados em prática.</p>Quando ele chegou em casa, ele viu um morcego entrando pela janela, então ele teve a ideia de criar uma identidade secreta inspirada no morcego que ele tinha visto. Foi ai então com a ajuda de Alfred que ele criou Batman, O Homem Morcego.<p>Apesar de super-herói, Batman não tem superpoderes. Na verdade, ele utiliza sua super inteligência, tecnologia e amigos fiéis para realizar suas missões. Ele tem muitas armas e equipamentos que somente ele tem acesso e muitos deles ele usa no seu cinto de utilidades. Além disso ele tem muitos veículos especiais entre eles está o Batmóvel que é o carro do Batman.</p>Ele tem amigos que são heróis poderosos, como Superman e  a Mulher Maravilha. Além disso, conta com o fiel mordomo Alfred e com o comissário de polícia Gordon.  Ele também tem parceiros importantes, como o Robin, a Batgirl e Mulher-Gato.<p>Mas ele também tem muitos inimigos. Entre eles estão o Coringa que é um criminoso malvado, o Duas Caras, Ra’s al Ghul que é um guerreiro imortal, o Pinguim que adora usar seu guarda-chuva cheio de truques contra o Batman e uma mulher capaz de controlar as plantas a Hera Venenosa.</p>"
   },
   {
     "brand": "dc",
     "codename": "Robin",
     "subtitle": "O Menino Prodígio",
-    "description": "Robin é parceiro oficial do Batman, que o acompanha no combate às injustiças. A primeira aparição de Robin nos quadrinhos foi em 1940, como um jovem acrobata de circo. Desde então já existiram 7 Robins diferentes, mas esse personagem é sempre alguém com quem Batman pode discutir os seus planos.",
+    "description": "Robin é parceiro oficial do Batman, que o acompanha no combate às injustiças. O primeiro Robin foi Dick Grayson, um jovem acrobata de circo. Mas já existiram 7 Robins diferentes, o Robin é sempre alguém com quem Batman pode discutir os seus planos.",
     "archetype": "hero",
     "tags": [
       {
@@ -32,13 +32,14 @@
         "label": "Jovens Titãs",
         "tooltip": "Equipe"
       }
-    ]
+    ],
+    "story": "<p>Já existiram 7 Robins diferentes porém o primeiro deles foi um menino chamado Dick Grayson. Dick era o filho mais novo de uma família de acrobatas que se apresentavam no circo, eles eram chamados de 'Os Graysons Voadores', mas um certo dia um criminoso entrou no circo durante a apresentação dos Graysons Voadores e vez uma malvadeza muito grande que fez com que todos eles caissem lá de cima do trapézio. O único que não caiu foi Dick ele ficou lá em cima do trapézio sozinho e com medo.</p><p>Mas tinha uma pessoa na platéia que estava vendo tudo e quis ajudar o pequeno Dick, o nome dele era Bruce Wayne. Bruce chamou Dick para ir pra casa dele onde poderia cuidar dele junto com seu fiel mordomo Alfred.</p><p>Bruce Wayne na verdade é o Batman, mas o pequeno Dick Grayson não sabia disso, a identidade do Batman é um grande segredo que somente os amigos mais fiéis de Bruce Wayne sabem. Mas enquanto Dick estava morando na mansão dos Wayne, Bruce ensinou várias lutas e técnicas de detetiva para Dick.</p><p> Uma noite, Dick não conseguiu dormir e ficou sentado no escritório de Bruce, quando de repente Alfred saiu de trás de um grande relógio e o deixou aberto. Curioso, Dick sem querer entrou na Bat-Caverna e escutou um som de motor, era o Batman chegando de mais uma patrulha em Gotham. Assustado, Dick tentou sair dali, mas Batman logo percebeu que não estava sozinho e reparou em Dick, mandando-o não fugir. Assim, Dick logo percebeu que Bruce Wayne que era o Batman.</p><p>  Como Robin, Dick Grayson foi o melhor lutador e líder, sendo muito alegre e cheio de fazer piadinhas até mesmo quando estava combatendo algum vilão. Após um tempo, Dick cresceu e deixou de ser o Robin e acabou se tornando um novo herói o Asa Noturna, o líder da equipe Jovens Titãs. </p>"
   },
   {
     "brand": "dc",
     "codename": "Coringa",
     "subtitle": "Joker",
-    "description": "O Coringa é o principal vilão e rival do Batman. Ele é sádico, excêntrico e cruel, mas também tem um lado cômico que o faz um vilão muito popular com os fãs. Uma marca registrada do Coringa, além de seu sorriso, é a lapela de seu terno, com flores de onde sai um ácido para atingir seus inimigos.",
+    "description": "O Coringa é o principal vilão e rival do Batman. Ele é muito doido e malvado, mas também é engraçado que o faz um vilão muito legal. Uma marca registrada do Coringa, além de seu sorriso, é a lapela de seu terno, com flores de onde sai um ácido para atingir seus inimigos.",
     "archetype": "villain",
     "tags": [
       {
@@ -49,6 +50,43 @@
         "label": "Legião do Mal",
         "tooltip": "Equipe"
       }
-    ]
+    ],
+    "story": "A história dste personagem ainda não foi escrita no Histórias de Heróis"
+  },
+  {
+    "brand": "marvel",
+    "codename": "Capitão América",
+    "subtitle": "O Primeiro Vingador",
+    "description": "O Capitão América veste um traje inspirado na bandeira dos Estados Unidos e tem um escudo quase indestrutível (feito de adamantanium-vibranium) que usa para atirar em seus inimigos. O primeiro Capitão América foi Steve Rogers, um jovem franzino que ganha super poders após aplicar um soro experimental com o intuito de ajudar os Estados Unidos na Segunda Guerra Mundial. ",
+    "archetype": "hero",
+    "tags": [
+      {
+        "label": "Estados Unidos",
+        "tooltip": "Localização"
+      },
+      {
+        "label": "Vingadores",
+        "tooltip": "Equipe"
+      }
+    ],
+    "story": "A história dste personagem ainda não foi escrita no Histórias de Heróis"
+  },
+  {
+    "brand": "marvel",
+    "codename": "Viúva Negra",
+    "subtitle": "Black Widow",
+    "description": "Em um acidente onde pegou fogo no prédio onde Natasha morava em Stalingrad a sua mãe a jogou pela janela para um soldado Russo. O nome do soldado era Ivan Petrovitch e ele cuidou de Natasha por toda a sua vida, ele a apresentou para o Tentáculo em Madripoor. Lá ela viria a se tornar a Mestre Assassina, até que o Capitão América, Logan e Ivan a salvaram. Enquanto Natasha crescia e amadurecia, ela provou ser uma incrível atleta e estudiosa, e até ganhou prêmios como bailarina.",
+    "archetype": "hero",
+    "tags": [
+      {
+        "label": "Rússia",
+        "tooltip": "Localização"
+      },
+      {
+        "label": "Vingadores",
+        "tooltip": "Equipe"
+      }
+    ],
+    "story": "A história dste personagem ainda não foi escrita no Histórias de Heróis"
   }
 ]
