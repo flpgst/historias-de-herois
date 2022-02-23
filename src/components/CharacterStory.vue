@@ -39,6 +39,7 @@ export default {
       return this.character.archetype === "hero" ? "heroes" : "villains";
     },
     imgSrc() {
+      console.log("this.character :>> ", this.character);
       const img =
         this.character.brand +
         "/" +
@@ -52,9 +53,9 @@ export default {
   },
   data() {
     return {
-      character: charactersDb.find(
-        (char) => char.codename.toLowerCase() === this.$route.name.toLowerCase()
-      ),
+      character: charactersDb.find((char) => {
+        return normalizarNome(char.codename) === this.$route.name.toLowerCase();
+      }),
     };
   },
 };
