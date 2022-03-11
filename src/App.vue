@@ -4,6 +4,20 @@
     <v-main class="my-6">
       <router-view />
     </v-main>
+    <v-footer>
+      <v-btn text plain href="https://github.com/flpgst/historias-de-herois/wiki" target="_blank">
+        <v-icon class="mr-1">mdi-cloud-upload</v-icon>
+        Contribua com histórias
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn text plain href="https://www.instagram.com/flpgst/" target="_blank">
+        Entre em contato
+        <v-icon class="ml-1">mdi-instagram</v-icon>
+      </v-btn>
+      <v-btn icon href="https://github.com/flpgst/historias-de-herois" target="_blank">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+    </v-footer>
   </v-app>
 </template>
 
