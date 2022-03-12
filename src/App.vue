@@ -1,7 +1,7 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes[theme].background }">
     <app-bar></app-bar>
-    <v-main class="my-6">
+    <v-main class="my-6 mx-4">
       <router-view />
     </v-main>
     <v-footer>
