@@ -7,6 +7,11 @@ Vue.use(VueRouter);
 
 const CharacterRoutes = [
   {
+    path: "/add-character",
+    name: "add-character",
+    component: () => import(/* webpackChunkName: "batman" */ "../views/forms/AddCharacter.vue"),
+  },
+  {
     path: "/batman",
     name: "batman",
     component: () => import(/* webpackChunkName: "batman" */ "../components/CharacterStory.vue"),
