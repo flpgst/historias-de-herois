@@ -10,11 +10,22 @@
 
 <script>
 import Top from "@/components/Top.vue";
+import firebase from "@/plugins/firebase";
 import CharacterList from "./CharacterList.vue";
 
 export default {
   name: "Home",
-
   components: { Top, CharacterList },
+  data() {
+    return {
+      characters: [],
+    };
+  },
+  methods: {
+    firebase,
+  },
+  async mounted() {
+    this.characters = await this.firebase();
+  },
 };
 </script>
