@@ -18,9 +18,11 @@ export default new Vuetify({
       light: {
         ...customColors,
         background: "#fafafa",
+        primary: customColors.hero,
       },
       dark: {
         ...customColors,
+        primary: customColors.villain,
       },
     },
   },
